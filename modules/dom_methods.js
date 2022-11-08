@@ -1,5 +1,12 @@
-// eslint-disable-next-line import/no-mutable-exports
 let books = [];
+
+const addBook = (book, author) => {
+  const id = books.length;
+  books.push({ id, book, author });
+  document.getElementById('error').textContent = '';
+  localStorage.setItem('books', JSON.stringify(books));
+  window.dispatchEvent(new Event('storage'));
+};
 
 const removeBook = (tag) => {
   if (Object.keys(books).length > 0) {
@@ -42,4 +49,6 @@ const loadBooks = () => {
   }
 };
 
-export { books, loadBooks };
+export {
+  addBook, removeBook, loadBooks,
+};

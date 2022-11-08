@@ -1,6 +1,6 @@
 import { DateTime } from './modules/luxon.min.js';
 import toggleView from './modules/view_toggle.js';
-import { loadBooks, books } from './modules/dom_methods.js';
+import { addBook, loadBooks } from './modules/dom_methods.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('date').innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_FULL);
@@ -24,14 +24,10 @@ window.addEventListener('DOMContentLoaded', () => {
   });
   document.getElementById('book-form').addEventListener('submit', (e) => {
     e.preventDefault();
-    const id = books.length;
     const book = document.getElementById('title').value;
     const author = document.getElementById('author').value;
     if (book && author) {
-      books.push({ id, book, author });
-      document.getElementById('error').textContent = '';
-      localStorage.setItem('books', JSON.stringify(books));
-      window.dispatchEvent(new Event('storage'));
+      addBook(book, author);
       document.getElementById('title').value = '';
       document.getElementById('author').value = '';
     } else {
