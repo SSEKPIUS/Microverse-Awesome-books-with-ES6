@@ -1,0 +1,165 @@
+/* stylelint-disable  no-descending-specificity */
+@media all and (max-width: 768px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* top nav */
+
+  .top-nav {
+    flex-direction: column;
+    padding: 0.3em;
+    margin: 0;
+    background: rgb(200, 197, 197);
+  }
+
+  .top-nav h1 {
+    font-size: 1.5em;
+  }
+
+  .top-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-nav ul li span {
+    font-size: 1.2em;
+    padding: 0 0.8em;
+  }
+
+  .top-date {
+    margin-top: 1em;
+    justify-content: center;
+  }
+
+  /* book list */
+
+  #list h2 {
+    font-size: 34px;
+  }
+
+  .book-list ul li {
+    flex-direction: column;
+  }
+
+  .book-list ul input[type=button] {
+    padding: 5px 30px;
+    font-size: 13px;
+    margin: 2px 2px;
+  }
+
+  /* new book */
+
+  #new {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #new h2 {
+    font-size: 40px;
+  }
+
+  /* form in new book */
+
+  #book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .form-book {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .in-put {
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    width: 327px;
+    height: 48px;
+    margin-top: 20px;
+    margin-left: 8px;
+    padding-left: 8px;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+
+  .btn button {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  /* contact us section */
+  #contact {
+    text-align: center;
+    padding: 30px 0;
+    margin: 30px 0;
+    border-radius: 30px;
+    font-size: 18px;
+  }
+
+  #contact h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  #contact p {
+    font-size: 18px;
+    width: auto;
+  }
+
+  #contact ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 2% 10%;
+  }
+
+  #contact ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+
+  #contact li {
+    margin: 2% 3%;
+  }
+
+  /* footer section */
+
+  footer {
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .foot {
+    padding: 10px 0;
+    border: black solid 2px;
+    margin: 1% 1%;
+  }
+
+  .bottom {
+    background-color: black;
+    height: 40px;
+    margin-top: 10px;
+  }
+}

@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://ssekpius.github.io/Microverse-Awesome-books)
+[Live Demo Link](https://ssekpius.github.io/Microverse-Awesome-books/)
 
 
 ## About
@@ -58,8 +58,7 @@ A mighty, modern linter that helps you avoid errors and enforce conventions in y
 - LinkedIn: [LinkedIn](https://linkedin.com/in/pius-ssekweyama-23665794)
 
 ## 🤝 Contributing
-1. Kinyanjuigeorge827@gmail.com
-
+1. Kinyanjui George (Kinyanjuigeorge827@gmail.com)
 Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
 
