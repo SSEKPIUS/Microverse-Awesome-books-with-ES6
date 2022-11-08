@@ -24,12 +24,6 @@ body {
   position: inherit;
 }
 
-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
 .container {
   margin: 0 10%;
 }
@@ -285,6 +279,9 @@ footer {
   align-items: center;
   text-align: center;
   font-weight: 400;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .foot {
